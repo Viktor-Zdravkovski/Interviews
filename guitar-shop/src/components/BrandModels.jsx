@@ -8,7 +8,7 @@ const BrandModels = ({ brandId, onSelectGuitar }) => {
             id: brandId,
             sortBy: { field: "price", order: "ASC" },
         },
-        skip: !brandId, // Skip query if brandId is falsy
+        skip: !brandId,
     });
 
     const [typeFilter, setTypeFilter] = useState("");

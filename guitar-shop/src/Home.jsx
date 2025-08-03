@@ -52,7 +52,7 @@ export default function Home() {
           )}
 
           <div className="top-left-title" style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
-            {/* Line 1: Logo + VibeStrings */}
+            {/* Logo + VibeStrings */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <img
                 src="./src/assets/Logos/VibeStringsLogo.png"
@@ -62,7 +62,7 @@ export default function Home() {
               <h1 style={{ margin: 0 }}>VibeStrings</h1>
             </div>
 
-            {/* Line 2: Guitar Name (Full width h1 look) */}
+            {/* Guitar Name  */}
             {selectedGuitar && (
               <h1 style={{ margin: '120px', marginTop: '10rem', fontSize: '4rem' }}>
                 {selectedGuitar.name}
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
 
 
-          {/* Intro Text or Brand Intro */}
+          {/* Brand Intro */}
           {!selectedBrand && !selectedGuitar && (
             <section className="intro-text">
               <h1>Browse top quality <span>Guitars</span> online</h1>
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Guitar Detail Tabs */}
+      {/* Detail Tabs */}
       {selectedGuitar && (
         <section style={{ width: "100%", padding: "2rem 1rem" }}>
           <div
@@ -300,7 +300,6 @@ export default function Home() {
               Why try <span className="highlight">VibeStrings?</span>
             </h1>
             <div className="why-try-columns">
-              {/* Repeatable info boxes */}
               <div className="why-try-box">
                 <i className="fa-solid fa-magnifying-glass" style={{ fontSize: '50px', color: '#333' }}></i>
                 <br /><br /><br />
